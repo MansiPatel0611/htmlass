@@ -52,6 +52,20 @@ text-align:center;
 color:white;
 }
 </style>
+<script type="text/javascript">
+function fb_over(m_img)
+{
+m_img.src='D:\html\image\fb_icon_hover.png';
+}
+function fb_out(m_img)
+{
+m_img.src='D:\html\image\fb_icon.png';
+}
+function tw_over()
+{
+documents.GetElementsById("tw").src='D:\html\image\tw_icon_hover.png';
+}
+</script>
 </head>
 <body>
 
@@ -184,14 +198,14 @@ color:white;
 	<br><br>SIGN UP FOR OUR NEWSLETTERTTER
 	<br>
 	<br>
-	<input style="border-radius:8px" type="text" value="Your Email Address"> 
-	<button style="border-radius:8px;background-color:rgba(50, 150, 250, 1);border:none">SUBSCRIBE</button>
+	<input style="border-radius:8px;border:none" type="text" value="Your Email Address"> 
+	<button style="border-radius:8px;position:relative;left:-15px;background-color:rgba(50, 150, 250, 1);border:none">SUBSCRIBE</button>
 	</input>
 	<br>
 	<br>
 	
-<img src="D:\html\image\fb_icon.png"/>
-<img src="D:\html\image\tw_icon.png"/>
+<img src="D:\html\image\fb_icon.png" id="fb" onmouseover="fb_over(this)" onmouseout="fb_out(this)"/>
+<img src="D:\html\image\tw_icon.png" id="tw" onmouseover="tw_over()"/>
 
 	<br>
 	<br>
